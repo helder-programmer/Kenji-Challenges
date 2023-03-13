@@ -36,4 +36,4 @@ for (let counter = 1; counter <= numbersQuantity; counter++) {
     numbersArray.push(number);
 }
 
-console.log(`A média aritmética dos números que você digitou é ${calculateNumbersAverage(...numbersArray)}`);
+console.log(`A média aritmética dos números que você digitou é: ${calculateNumbersAverage(...numbersArray)}`);
