@@ -17,6 +17,4 @@ if (!Number.isInteger(number)) {
     } else  {
         console.log('Você digitou um número impar!');
     }
-
-
 }

@@ -1,27 +1,22 @@
 import PromptSync from "prompt-sync";
 const prompt = PromptSync();
 
-const isInteger = number => {
-    let isInteger = Number.isInteger(number);
-    if (!isInteger) return false;
+const verifyNumber = number => {
+    let isPositiveNumber = number > 0;
+    if (isPositiveNumber) return true;
+    return false;
+}
 
-    return true
 
+function app() {
+    let number = Number(prompt('Digite um número inteiro: '));
+    let isValidNumber = Number.isInteger(number) && number != 0;
 
+    if (!isValidNumber) return console.log('Digite somente valores inteiros e maiores que zero!');
 
+    if (verifyNumber(number)) return console.log(`O número digitado é um número positivo`);
+    return console.log(`O número digitado é um número negativo`);    
 
 }
 
-const number = Number(prompt('Digite um número inteiro: '));
-
-
-let isValidNumber = Number.isFinite(number);
-if (isValidNumber) {
-    if (isInteger(number)) {
-        console.log('O valor digitado é inteiro!');
-    } else {
-        console.log('O valo digitado não é inteiro!');
-    }
-} else {
-    console.log('Digite um valor válido e inteiro!');
-}
+app();

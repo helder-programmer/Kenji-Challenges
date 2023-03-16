@@ -1,4 +1,5 @@
 import PromptSync from "prompt-sync";
+import isIntegerAndPositiveNumber from './helpers/index.js';
 const prompt = PromptSync();
 
 const calculateNumbersAverage = (...numbers) => {
@@ -19,8 +20,7 @@ let numbersArray = [];
 
 while (true) {
     numbersQuantity = Number(prompt('Digite quantos números deseja digitar: '));
-    let isValidNumberQuantity = Number.isInteger(numbersQuantity) && numbersQuantity > 0;
-    if (isValidNumberQuantity) break;
+    if (isIntegerAndPositiveNumber(numbersQuantity)) break;
     console.log('Informe um número válido!');
 }
 
