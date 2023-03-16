@@ -17,7 +17,12 @@ function app() {
         let number = Number(prompt(`Digite o número ${counter}: `));
         let isValidNumber = Number.isFinite(number);
 
-        if (!isValidNumber) return console.log('Digite um número válido!');
+        if (!isValidNumber) {
+            console.log('Digite um número válido!');
+            counter--;
+            continue;
+        }
+
 
         numbersArray.push(number);
     }

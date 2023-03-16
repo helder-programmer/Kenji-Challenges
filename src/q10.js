@@ -9,7 +9,7 @@ const greatWeight = (height, sex) => {
 }
 
 function app() {
-    let sex = prompt('Digite seu sexo: ');
+    let sex = prompt('Digite seu sexo(m ou f): ');
     let height = Number(prompt('Digite sua altura: '));
 
     let isValidHeight = Number.isFinite(height) && height >= 0;

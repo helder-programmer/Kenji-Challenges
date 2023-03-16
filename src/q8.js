@@ -10,7 +10,7 @@ const isEvenNumber = number => {
 const number = Number(prompt('Digite um número: '));
 
 if (!Number.isInteger(number)) {
-    console.log('Digite um valor válido e inteiro!');
+    console.log('Digite um número inteiro!');
 } else {
     if (isEvenNumber(number)) {
         console.log('Você digitou um número par!');

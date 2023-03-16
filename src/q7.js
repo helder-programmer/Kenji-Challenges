@@ -12,7 +12,7 @@ function app() {
     let number = Number(prompt('Digite um número inteiro: '));
     let isValidNumber = Number.isInteger(number) && number != 0;
 
-    if (!isValidNumber) return console.log('Digite somente valores inteiros e maiores que zero!');
+    if (!isValidNumber) return console.log('Digite somente valores inteiros e diferentes de zero!');
 
     if (verifyNumber(number)) return console.log(`O número digitado é um número positivo`);
     return console.log(`O número digitado é um número negativo`);    

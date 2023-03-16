@@ -8,7 +8,6 @@ const calculateSalaryAverageAndChildrenNumbersAverage = (...persons) => {
     let maxSalary = 0;
     let personPercentageWithSalaryTo350 = 0;
 
-    console.log(persons);
     persons.forEach(currentPerson => {
         salaryAverage += currentPerson.salary;
         childrenAverage += currentPerson.children;
@@ -56,7 +55,7 @@ function app() {
                 persons.push(person);
                 break;
             }
-            console.log('Digite um valores válidos para o salário e para o número de filhos da família!');
+            console.log('Digite um valores válidos para o salário e para o número de filhos da pessoa!');
         }
     }
     calculateSalaryAverageAndChildrenNumbersAverage(...persons);

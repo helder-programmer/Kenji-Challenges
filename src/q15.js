@@ -29,8 +29,8 @@ for (let counter = 1; counter <= numbersQuantity; counter++) {
 
     while (true) {
         number = Number(prompt(`Digite o número ${counter}: `));
-        if (Number.isFinite(number)) break;
-        console.log('Digite somente números!');
+        if (Number.isFinite(number) && number >= 0) break;
+        console.log('Digite somente números positivos!');
     }
 
     numbersArray.push(number);

@@ -12,9 +12,8 @@ function tabuada(number) {
 
 function app() {
     let number = Number(prompt('Digite um número: '));
-    let isValidNumber = Number.isInteger(number) && number > 0;
 
-    if (!isIntegerAndPositiveNumber(number)) return console.log('Digite um número válido!');
+    if (!isIntegerAndPositiveNumber(number)) return console.log('Digite apenas números inteiros e positivos!');
 
     tabuada(number);
 }

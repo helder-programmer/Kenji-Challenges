@@ -13,7 +13,7 @@ const calculateFactorial = number => {
 function app() {
     let number = Number(prompt('Digite um número inteiro positivo: '));
 
-    if (!isIntegerAndPositiveNumber(number)) return console.log('Digite um número válido!');
+    if (!isIntegerAndPositiveNumber(number)) return console.log('Digite apenas números inteiros e positivos!');
 
     console.log(`O fatorial do número digitado é ${calculateFactorial(number)}`);
 }
